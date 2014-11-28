@@ -1,0 +1,18 @@
+<h1>Add ingredient for <% link_to @cocktail.name, cocktail_path(@cocktail) %> </h1>
+
+<%= form_for([@cocktail, @dose]) do |f| %>
+
+  <div class="field">
+    <%= f.label :ingredient %><br>
+    <%=  f.select :ingredient_id, Ingredient.all.collect{ |ingredient| [ingredient.name, ingredient.id]}  %>
+  </div>
+
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.number_field :amount %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
