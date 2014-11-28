@@ -27,6 +27,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+gem 'simple_form'
+
+gem 'bootstrap-sass', '~> 3.3.1'
+gem 'font-awesome-sass', '~> 4.2.0'
+gem 'bootstrap_form'
+
 group :development do
   gem "better_errors"
   gem "binding_of_caller"
